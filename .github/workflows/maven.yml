@@ -32,7 +32,7 @@ jobs:
             cache: maven
         - run: mvn -B package --file pom.xml -DskipTests
         - run: mkdir staging && cp target/random-string-parameter.hpi staging
-        - uses: actions/upload-artifact@v1
+        - uses: actions/upload-artifact@v4
           with:
             name: Package
             path: staging
