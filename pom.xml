@@ -13,7 +13,7 @@
     <url>http://wiki.jenkins-ci.org/display/JENKINS/Random+String+Parameter+Plugin</url>
 
     <scm>
-        <connection>scm:git:git://github.com/jenkinsci/random-string-parameter-plugin.git</connection>
+        <connection>scm:git:https://github.com/jenkinsci/random-string-parameter-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:jenkinsci/random-string-parameter-plugin.git</developerConnection>
         <url>http://github.com/jenkinsci/random-string-parameter-plugin</url>
     </scm>
