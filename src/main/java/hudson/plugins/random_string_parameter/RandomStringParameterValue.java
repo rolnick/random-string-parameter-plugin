@@ -86,7 +86,7 @@ public class RandomStringParameterValue extends StringParameterValue {
         if (!super.equals(obj)) {
             return false;
         }
-        if (RandomStringParameterValue.class != obj.getClass()) {
+        if (this.getClass() != obj.getClass()) {
             return false;
         }
         RandomStringParameterValue other = (RandomStringParameterValue)obj;

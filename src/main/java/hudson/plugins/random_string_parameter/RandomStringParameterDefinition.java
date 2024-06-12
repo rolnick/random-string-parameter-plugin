@@ -43,7 +43,7 @@ import java.util.Random;
 /**
  * String based parameter that supports setting a regular expression to validate the
  * user's entered value, giving real-time feedback on the value.
- * 
+ *
  * @author Piotr Skotnicki
  * @since 1.0
  * @see {@link ParameterDefinition}
@@ -54,13 +54,9 @@ public class RandomStringParameterDefinition extends ParameterDefinition {
     private String failedValidationMessage;
 
     @DataBoundConstructor
-    public RandomStringParameterDefinition(String name, String failedValidationMessage, String description) {
-        super(name, description);
-        this.failedValidationMessage = failedValidationMessage;
-    }
-
     public RandomStringParameterDefinition(String name, String failedValidationMessage) {
-        this(name, failedValidationMessage, null);
+        super(name);
+        this.failedValidationMessage = failedValidationMessage;
     }
 
     public String getFailedValidationMessage() {
@@ -72,9 +68,9 @@ public class RandomStringParameterDefinition extends ParameterDefinition {
     }
 
     public String getRootUrl() {
-        return Hudson.getInstance().getRootUrl();
+        return Hudson.get().getRootUrl();
     }
-    
+
     static final String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     static Random rnd = new Random();
 
