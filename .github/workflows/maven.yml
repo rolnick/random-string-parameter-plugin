@@ -28,6 +28,7 @@ jobs:
         - uses: actions/setup-java@v4
           with:
             java-version: '17'
+            distribution: 'temurin'
             cache: maven
         - run: mvn -B package --file pom.xml -DskipTests
         - run: mkdir staging && cp target/random-string-parameter.hpi staging
