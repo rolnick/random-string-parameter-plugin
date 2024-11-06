@@ -29,7 +29,7 @@ THE SOFTWARE.
         <div name="parameter" description="${it.description}">
             <input type="hidden" name="name" value="${it.name}" />
             <f:textbox name="value" value="${it.defaultValue}"
-                checkUrl="${it.rootUrl}/descriptor/hudson.plugins.random_string_parameter.RandomStringParameterDefinition/validate checkDependsOn=""/>
+                checkUrl="${it.rootUrl}/descriptor/hudson.plugins.random_string_parameter.RandomStringParameterDefinition/validate" checkDependsOn=""/>
         </div>
     </f:entry>
 </j:jelly>
